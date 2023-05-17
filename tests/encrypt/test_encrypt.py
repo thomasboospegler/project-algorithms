@@ -4,8 +4,8 @@ import pytest
 
 def test_encrypt_message():
     with pytest.raises(TypeError):
-        encrypt_message(3, 'thomas')
+        encrypt_message(2, "cadu")
 
-    assert encrypt_message("thomas", 3) == "sam_oht"
+    assert encrypt_message("cadu", 2) == "ud_ac"
 
     assert encrypt_message("12345", 0) == "54321"
